@@ -5,12 +5,11 @@
 
 body > main > div > div > h1{
     color:#ff6a21!important;
-    font-weight: 350;
-    font-size: 4em;
+    font-weight: 300;
 }
 
 body>main>div>div>h1 span{
     font-size: 0.5em;
-    font-weight: 300;
+    font-weight: 200;
     color:#ff6a21;
 }

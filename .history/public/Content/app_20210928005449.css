@@ -1,0 +1,10 @@
+/* your custom css goes here */
+.navbar-brand {
+    width: 100px;
+}
+
+body > main > div > div > h1{
+    color:#ff6a21;
+    font-size: 5em;
+    font-weight: 400;
+}
