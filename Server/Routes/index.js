@@ -8,10 +8,10 @@ const fs_1 = __importDefault(require("fs"));
 const router = express_1.default.Router();
 exports.default = router;
 router.get("/", function (req, res, next) {
-    res.render("index", { title: "Home" });
+    res.render("index", { title: "Home", page: "home" });
 });
 router.get("/home", function (req, res, next) {
-    res.render("index", { title: "Home" });
+    res.render("index", { title: "Home", page: "home" });
 });
 router.get('/about', function (req, res, next) {
     let resumePath = 'Public/Assets/docs/resume.pdf';
@@ -21,12 +21,12 @@ router.get('/about', function (req, res, next) {
     });
 });
 router.get("/projects", function (req, res, next) {
-    res.render("index", { title: "Projects" });
+    res.render("index", { title: "Projects", page: "projects" });
 });
 router.get("/services", function (req, res, next) {
-    res.render("index", { title: "Services" });
+    res.render("index", { title: "Services", page: "services" });
 });
 router.get("/contact", function (req, res, next) {
-    res.render("index", { title: "Contact" });
+    res.render("index", { title: "Contact", page: "contact" });
 });
 //# sourceMappingURL=index.js.map

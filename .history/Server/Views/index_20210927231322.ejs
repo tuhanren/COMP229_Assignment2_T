@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="/Content/app.css"/>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+  </head>
+  <body>
+  <!-- Navigation Section -->
+  <header>
+    <%- include('components/header.ejs'); %>
+  </header>
+  <!-- Content Section -->
+  <main class="container">
+    <h1><i class="fas fa-fire-alt fa-lg mt-2"></i> Welcome to the <strong><%= title %></strong> page</h1>
+
+    <div class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </main>
+    
+  <!-- Footer Section -->
+  <footer>
+    <%- include('components/footer.ejs'); %>
+  </footer>
+    <!-- JavaScript Section -->
+    <script src="/Scripts/app.js"></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  </body>
+</html>

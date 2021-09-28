@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c65348e7-11a4-4045-9f99-9d49f0e97511/resourceGroups/hanrenAppServiceQS-rg/providers/Microsoft.Web/sites/hanren",
+    "appService.deploySubpath": "."
+}

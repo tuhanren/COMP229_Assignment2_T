@@ -1,0 +1,66 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img class="navbar-brand" src="./Assets/images/logo2.gif"></a>
+      <!-- hambuger button-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <% if (title == 'Home') { %>
+            <a class="nav-link active" href="/home">
+              <% } else { %>
+              <a class="nav-link" href="/home">
+                <% } %>
+                <i class="fas fa-home fa-lg"></i> Home</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'About') { %>
+            <a class="nav-link active" href="/about">
+              <% } else { %>
+              <a class="nav-link" href="/about">
+                <% } %>
+                <i class="fas fa-info-circle fa-lg"></i> About</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'Projects') { %>
+            <a class="nav-link active" href="/projects">
+              <% } else { %>
+              <a class="nav-link" href="/projects">
+                <% } %>
+                <i class="fas fa-project-diagram fa-lg"></i> Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'Services') { %>
+            <a class="nav-link active" href="/services">
+              <% } else { %>
+              <a class="nav-link" href="/services">
+                <% } %>
+                <i class="fas fa-concierge-bell fa-lg"></i> Services</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == 'Contact') { %>
+            <a class="nav-link active" href="/contact">
+              <% } else { %>
+              <a class="nav-link" href="/contact">
+                <% } %>
+                <i class="fas fa-id-card fa-lg"></i> Contact</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/tuhanren"><i class="fab fa-github-square fa-lg"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/hanrentu"><i class="fab fa-linkedin fa-lg"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
