@@ -1,0 +1,23 @@
+  <div class="container">
+    <h1><i class="fas fa-fire-alt fa-lg mt-2"></i> Welcome to the <strong><%= title %></strong> page</h1>
+
+<form method="post" action="index.php" role="form" class="form-horizontal"> 
+                            		<div class="form-group">
+                            			<label for="name">Your Name</label>
+    									<input name="name" id="name">
+                                 </div>
+                                 <div class="form-group">
+         								<label for="email">Your Email</label>
+   										<input name="email" type="email" id="email">
+                                 </div>
+                                 <div class="form-group">
+            							<label>Message</label>
+   								    	<textarea name="message" id="message" placeholder="Question, comment or query.."></textarea>
+                                 </div>
+                                 <div class="form-group">
+                                 	<label>*What is 2+2? (So I know you aren't a robot)</label>
+										<input name="human">
+                                 </div>
+            					    <input id="submit" name="submit" type="submit" value="Submit">
+                            </form>
+  </div>

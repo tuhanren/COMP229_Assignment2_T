@@ -1,0 +1,24 @@
+/* your custom css goes here */
+.navbar-brand {
+    width: 100px;
+}
+body > main > div > div > h1{
+    color:#ff6a21!important;
+    font-weight: 350;
+    font-size: 4em;
+    margin-right: auto;
+    float: left;
+}
+body > main > div > div > h1 span{
+    font-size: 0.5em;
+    font-weight: 300;
+    color:#ff6a21;
+    margin-right: auto;
+    float: left;
+}
+body>main>div>div>div{
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    float: right;
+}
