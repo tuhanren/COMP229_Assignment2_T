@@ -15,9 +15,10 @@
   </header>
   <!-- Content Section -->
   <main> 
-    <div class="container">
+    <div class="container" id="particles-js">
       <%- include('content/'+ page + '.ejs'); %>
     </div>
+
   </main>    
   <!-- Footer Section -->
   <footer>
@@ -30,6 +31,8 @@
     <script src="/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="/lottie-web/build/player/lottie.min.js"></script>
     <script src="/typed.js/lib/typed.min.js"></script>
+    <script src="/particles/particles.min.js"></script>
+    <script src="/particles/app.js"></script>
     <!-- Lottie Section -->
     <script>
       const lottiehome = document.querySelector('.lottiehome');

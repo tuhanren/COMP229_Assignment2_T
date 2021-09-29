@@ -5,9 +5,13 @@ Student ID: 301061529
 Date: 2021-09-28
 */
 body {
-    background-image: url("/Assets/images/background.jpg");
+    background-image: url("/Assets/images/background.jpg") no-repeat center center fixed;
     background-size: cover;
     opacity: 0.9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
 }
 .navbar-brand {
     width: 100px;

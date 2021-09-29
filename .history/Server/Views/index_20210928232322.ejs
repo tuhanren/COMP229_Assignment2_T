@@ -9,11 +9,13 @@
   </head>
   
   <body>
+
   <!-- Navigation Section -->
   <header>
     <%- include('components/header.ejs'); %>
   </header>
   <!-- Content Section -->
+  
   <main> 
     <div class="container">
       <%- include('content/'+ page + '.ejs'); %>
@@ -23,6 +25,7 @@
   <footer>
     <%- include('components/footer.ejs'); %>
   </footer>
+  
     <!-- JavaScript Section -->
     <script src="/Scripts/app.js"></script>
     <script src="/jquery/dist/jquery.min.js"></script>
@@ -30,6 +33,8 @@
     <script src="/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="/lottie-web/build/player/lottie.min.js"></script>
     <script src="/typed.js/lib/typed.min.js"></script>
+    <script src="/particles/particles.min.js"></script>
+    <script src="/particles/app.js"></script>
     <!-- Lottie Section -->
     <script>
       const lottiehome = document.querySelector('.lottiehome');

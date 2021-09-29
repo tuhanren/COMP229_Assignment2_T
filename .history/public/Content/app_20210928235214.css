@@ -8,6 +8,10 @@ body {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
     opacity: 0.9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
 }
 .navbar-brand {
     width: 100px;

@@ -8,9 +8,15 @@ body {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
     opacity: 0.9;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 .navbar-brand {
     width: 100px;
+}
+body>main>div{
+    margin: 0;
+    padding: 0;
 }
 body>main>div>div>div> h2 {
     /* color:#ff6a21!important; */
