@@ -8,11 +8,8 @@ body {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
     opacity: 0.9;
-    height: 1000px;
 }
-.navbar-brand {
-    width: 100px;
-}
+
 body>main>div>div>div> h2 {
     /* color:#ff6a21!important; */
     font-weight: 350;

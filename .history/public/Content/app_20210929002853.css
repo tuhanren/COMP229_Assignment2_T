@@ -6,9 +6,8 @@ Date: 2021-09-28
 */
 body {
     background-image: url("/Assets/images/background.jpg");
-    background-size: cover;
+    background-size: 100%;
     opacity: 0.9;
-    height: 1000px;
 }
 .navbar-brand {
     width: 100px;
