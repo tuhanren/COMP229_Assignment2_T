@@ -16,7 +16,9 @@
   <!-- Content Section -->
   <main> 
     <div class="container">
+    <div id="particles-js">
       <%- include('content/'+ page + '.ejs'); %>
+    </div>
     </div>
   </main>    
   <!-- Footer Section -->
@@ -30,6 +32,8 @@
     <script src="/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="/lottie-web/build/player/lottie.min.js"></script>
     <script src="/typed.js/lib/typed.min.js"></script>
+    <script src="/particles/particles.min.js"></script>
+    <script src="/particles/app.js"></script>
     <!-- Lottie Section -->
     <script>
       const lottiehome = document.querySelector('.lottiehome');
@@ -45,10 +49,9 @@
     <script>
       let typed = new Typed(".type", {
         strings: [
-          "Hey, It's Hanren here!",
-          "I am a Web Developer.",
-          "I am a Data Analyst.",
-          "I am a College Student."
+          "Developer",
+          "Analyst",
+          "Designer"
         ],
         typeSpeed: 60,
         backSpeed: 60,

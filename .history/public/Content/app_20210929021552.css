@@ -7,7 +7,7 @@ Date: 2021-09-28
 body {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
-    /*height: 800px;*/
+    height: 1000px;
     opacity: 0.9;
     -webkit-animation: fadein 0.5s linear forwards;
     animation: fadein 0.5s linear forwards;
@@ -38,7 +38,8 @@ body>main>div>div>div> h2 {
 .typecontainer {
     color: #fff;
     position: relative;
-    height: 600px;
+
+
     padding-top: 25%;
     padding-left: 35%;
 }

@@ -4,10 +4,9 @@ Student Name: Tu Hanren
 Student ID: 301061529
 Date: 2021-09-28
 */
-body {
+main {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
-    /*height: 800px;*/
     opacity: 0.9;
     -webkit-animation: fadein 0.5s linear forwards;
     animation: fadein 0.5s linear forwards;
@@ -22,29 +21,30 @@ body>main>div>div>div> h2 {
     padding: 10px;
     margin: 15px;
 }
+body>main>div>div>div> h2 span {
+    color:rgb(201, 16, 16);
+}
 .lottiehome{
     height: 300px;
     width: 300px;
     float: right;
     position: relative;
-    bottom: 200px;
 }
-#jumbortron{
+/* .jumbortron{
     width: 1000px;
     position: relative;
     left: 12%;
-    bottom: 80px;
-}
+} */
 .typecontainer {
     color: #fff;
     position: relative;
+    width: 1000px;
     height: 600px;
-    padding-top: 25%;
+    padding-top: 30%;
     padding-left: 35%;
 }
 .type {
     position: relative;
-    color:rgba(47, 251, 11, 0.931);
 }
 body>main>div > h1 {
     color:#ffffff;
