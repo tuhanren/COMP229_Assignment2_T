@@ -60,6 +60,9 @@ body>main>div > h1 {
     height: 200px;
     width: 200px;
 }
+.projectstable {
+    width: 300px;
+}
 /*Global*/
 @-webkit-keyframes fadein {
 

@@ -4,7 +4,6 @@ Student Name: Tu Hanren
 Student ID: 301061529
 Date: 2021-09-28
 */
-/*Home page CSS*/
 body {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
@@ -29,10 +28,10 @@ body>main>div>div>div> h2 {
     bottom: 200px;
 }
 #jumbortron{
-    width: 1050px;
+    
     position: relative;
-    left: 11%;
-    bottom: 120px;
+    left: 12%;
+    bottom: 80px;
 }
 .typecontainer {
     color: #fff;
@@ -55,12 +54,9 @@ body>main>div > h1 {
     font-size: 24px;
     position: relative;
 }
-/*Projects Page CSS*/
-.projectanimation {
-    height: 200px;
-    width: 200px;
+.container {
+    padding-top: 60px;
 }
-/*Global*/
 @-webkit-keyframes fadein {
 
     from {
