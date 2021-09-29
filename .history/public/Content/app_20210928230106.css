@@ -14,16 +14,19 @@ body {
 .navbar-brand {
     width: 100px;
 }
-body>main>div>div>div> h2 {
-    /* color:#ff6a21!important; */
+body>main>div>div>div> h1 {
+    color:#ff6a21!important;
     font-weight: 350;
     font-size: 4em;
+    margin-right: auto;
     padding: 10px;
-    margin: 15px;
 }
-body>main>div>div>div> h2 span {
-    color:rgb(221, 0, 0);
-}
+/* body>main>div>div>div> h1 span {
+    font-size: 0.5em;
+    font-weight: 300;
+    color:#ff6a21;
+    margin-right: auto;
+} */
 .lottiehome{
     height: 300px;
     width: 300px;
