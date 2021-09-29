@@ -8,20 +8,18 @@ body {
     background-image: url("/Assets/images/background.jpg");
     background-size: cover;
     opacity: 0.9;
-    background-repeat: no-repeat;
-    width: 100%;
 }
 .navbar-brand {
     width: 100px;
 }
-body>main>div>div>div> h1 {
+body>main>div>div> h1 {
     color:#ff6a21!important;
     font-weight: 350;
     font-size: 5em;
     margin-right: auto;
     margin-top: 10px;
 }
-body>main>div>div>div> h1 span {
+body>main>div>div> h1 span {
     font-size: 0.5em;
     font-weight: 300;
     color:#ff6a21;
@@ -36,41 +34,19 @@ body>main>div>div>div> h1 span {
 .jumbortron{
     width: 1000px;
     position: relative;
-    left: 12%;
+    top:50%;
+    left:23%;
 }
-body>main>div > h1 {
+body>main> h1 {
     color:#ffffff;
     position: relative;
+    left:23%;
     padding:10px;
 }
 .introduction {
-    margin-left: 3%;
-    font-size: 24px;
+    padding-top: auto;
+    height: auto;
+    margin-left: auto;
+    font-size: 26px;
     position: relative;
-}
-
-body {
-    -webkit-animation: fadein 0.5s linear forwards;
-    animation: fadein 0.5s linear forwards;
-}
-
-@-webkit-keyframes fadein {
-
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0.9;
-    }
-}
-
-@keyframes fadein {
-
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 0.9;
-    }
 }

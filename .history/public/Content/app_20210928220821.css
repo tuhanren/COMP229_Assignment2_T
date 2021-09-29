@@ -36,11 +36,12 @@ body>main>div>div>div> h1 span {
 .jumbortron{
     width: 1000px;
     position: relative;
-    left: 12%;
+    left:23%;
 }
 body>main>div > h1 {
     color:#ffffff;
     position: relative;
+
     padding:10px;
 }
 .introduction {
