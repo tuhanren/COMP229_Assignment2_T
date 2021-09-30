@@ -1,0 +1,106 @@
+/* 
+File name: portfolio
+Student Name: Tu Hanren
+Student ID: 301061529
+Date: 2021-09-28
+*/
+/*Home page CSS*/
+body {
+    background-image: url("/Assets/images/background.svg");
+    /*image source: https://pixabay.com/illustrations/planet-moon-orbit-solar-system-581239/*/
+    background-size: cover;
+    /* height: 800px; */
+    opacity: 0.9;
+    -webkit-animation: fadein 0.5s linear forwards;
+    animation: fadein 0.5s linear forwards;
+    /* background-repeat: no-repeat; */
+}
+body>main>div> h1{
+    position: relative;
+    left: 12%;
+}
+body>main>div>div>div> h2 {
+    /* color:#ff6a21!important; */
+    font-weight: 350;
+    font-size: 4em;
+    padding: 10px;
+    margin: 15px;
+}
+.lottiehome{
+    height: 300px;
+    width: 300px;
+    float: right;
+    position: relative;
+    bottom: 200px;
+}
+#jumbortron{
+    width: 1050px;
+    position: relative;
+    left: 11%;
+    bottom: 120px;
+}
+.typecontainer {
+    color: #fff;
+    position: relative;
+    height: 600px;
+    padding-top: 25%;
+    padding-left: 35%;
+}
+.type {
+    position: relative;
+    color:rgba(47, 251, 11, 0.931);
+}
+body>main>div > h1 {
+    color:#ffffff;
+    position: relative;
+    padding:10px;
+}
+.introduction {
+    margin-left: 3%;
+    font-size: 24px;
+    position: relative;
+}
+/*Projects Page CSS*/
+.serviceanimation {
+    height: 200px;
+    width: 200px;
+}
+.img-thumbnail {
+    height: 200px;
+    width: 200px;
+}
+#table {
+    width: 80%;
+    position: relative;
+    left: 11%;
+}
+/*Contact Page CSS*/
+.particles {
+        background-image: url("/Assets/images/background.svg");
+        /*image source: https://pixabay.com/illustrations/planet-moon-orbit-solar-system-581239/*/
+        background-size: cover;
+        /* height: 800px; */
+        opacity: 0.8;
+}
+
+/*Global*/
+@-webkit-keyframes fadein {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes fadein {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}
