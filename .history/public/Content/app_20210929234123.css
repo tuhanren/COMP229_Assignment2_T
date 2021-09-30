@@ -75,8 +75,20 @@ body>main>div > h1 {
     left: 11%;
 }
 /*Contact Page CSS*/
+.card {
+    display: flex;
+    flex-direction: column;
+}
 
+.card__cover {
+    height: 150px;
+    width: 100%;
+}
 
+.card__content {
+    /* Take available height */
+    flex: 1;
+}
 /*Global*/
 @-webkit-keyframes fadein {
 
