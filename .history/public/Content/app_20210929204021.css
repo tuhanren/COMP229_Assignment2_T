@@ -14,10 +14,6 @@ body {
     animation: fadein 0.5s linear forwards;
     /* background-repeat: no-repeat; */
 }
-body>main>div> h1{
-    position: relative;
-    left: 12%;
-}
 body>main>div>div>div> h2 {
     /* color:#ff6a21!important; */
     font-weight: 350;
@@ -67,11 +63,6 @@ body>main>div > h1 {
 .img-thumbnail {
     height: 200px;
     width: 200px;
-}
-#table {
-    width: 80%;
-    position: relative;
-    left: 11%;
 }
 /*Global*/
 @-webkit-keyframes fadein {

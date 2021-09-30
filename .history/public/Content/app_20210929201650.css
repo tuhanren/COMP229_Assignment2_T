@@ -6,17 +6,13 @@ Date: 2021-09-28
 */
 /*Home page CSS*/
 body {
-    background-image: url("/Assets/images/background.svg");
+    background-image: url("/Assets/images/background.jpg");
     background-size: cover;
-    /* height: 800px; */
+    height: 800px;
     opacity: 0.9;
     -webkit-animation: fadein 0.5s linear forwards;
     animation: fadein 0.5s linear forwards;
     /* background-repeat: no-repeat; */
-}
-body>main>div> h1{
-    position: relative;
-    left: 12%;
 }
 body>main>div>div>div> h2 {
     /* color:#ff6a21!important; */
@@ -67,11 +63,7 @@ body>main>div > h1 {
 .img-thumbnail {
     height: 200px;
     width: 200px;
-}
-#table {
-    width: 80%;
-    position: relative;
-    left: 11%;
+
 }
 /*Global*/
 @-webkit-keyframes fadein {

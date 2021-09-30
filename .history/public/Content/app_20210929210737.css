@@ -17,6 +17,7 @@ body {
 body>main>div> h1{
     position: relative;
     left: 12%;
+    color: rgba(47, 251, 11, 0.931);
 }
 body>main>div>div>div> h2 {
     /* color:#ff6a21!important; */
