@@ -83,12 +83,7 @@ body>main>div > h1 {
     color: #fff;
     width: 65%;
     position: relative;
-    left: 20%;
-}
-.row {
-    width: 25%;
-    position: relative;
-    left: 40%;
+    left: 15%;
 }
 /*Global*/
 @-webkit-keyframes fadein {

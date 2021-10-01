@@ -81,14 +81,9 @@ body>main>div > h1 {
 } */
 #contact {
     color: #fff;
-    width: 65%;
+    width: 50%;
     position: relative;
-    left: 20%;
-}
-.row {
-    width: 25%;
-    position: relative;
-    left: 40%;
+    left: 11%;
 }
 /*Global*/
 @-webkit-keyframes fadein {

@@ -86,9 +86,9 @@ body>main>div > h1 {
     left: 20%;
 }
 .row {
-    width: 25%;
+    width: 30%;
     position: relative;
-    left: 40%;
+    left: 20%;
 }
 /*Global*/
 @-webkit-keyframes fadein {
