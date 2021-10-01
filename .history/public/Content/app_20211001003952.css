@@ -62,7 +62,6 @@ body>main>div> h1 {
     width: 80%;
     position: relative;
     left: 11%;
-    opacity: 0.9;
 }
 /*Contact Page CSS*/
 #contact {
@@ -76,7 +75,6 @@ body>main>div> h1 {
     position: relative;
     left: 40%;
 }
-
 /*Global*/
 @-webkit-keyframes fadein {
 

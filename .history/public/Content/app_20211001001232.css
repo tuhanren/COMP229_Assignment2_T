@@ -27,13 +27,13 @@ body>main>div>div> h1{
     bottom: 200px;
 }
 #jumbortron {
-    width: 830px;
+    width: 900px;
     position: relative;
-    left: 27%;
+    left: 19%;
     bottom: 120px;
     font-size: 22px;
     top: 40%;
-    background-color: rgba(0,0,0,0);
+    opacity: 0.9;
 }
 .typecontainer {
     color: #fff;
@@ -42,6 +42,7 @@ body>main>div>div> h1{
     padding-left: 35%;
 }
 .type {
+    color:rgba(255, 255, 255, 0.931);
     font-size:40px;
 }
 body>main>div> h1 {
@@ -62,7 +63,6 @@ body>main>div> h1 {
     width: 80%;
     position: relative;
     left: 11%;
-    opacity: 0.9;
 }
 /*Contact Page CSS*/
 #contact {
@@ -76,7 +76,6 @@ body>main>div> h1 {
     position: relative;
     left: 40%;
 }
-
 /*Global*/
 @-webkit-keyframes fadein {
 

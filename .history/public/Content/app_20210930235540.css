@@ -10,7 +10,7 @@ body {
     /*image source: https://pixabay.com/illustrations/planet-moon-orbit-solar-system-581239/*/
     background-size: cover;
     /* height: 800px; */
-    /* opacity: 0.9; */
+    opacity: 0.9;
     -webkit-animation: fadein 0.5s linear forwards;
     animation: fadein 0.5s linear forwards;
     /* background-repeat: no-repeat; */
@@ -27,21 +27,21 @@ body>main>div>div> h1{
     bottom: 200px;
 }
 #jumbortron {
-    width: 830px;
+    width: 1050px;
     position: relative;
-    left: 27%;
+    left: 11%;
     bottom: 120px;
     font-size: 22px;
-    top: 40%;
-    background-color: rgba(0,0,0,0);
+    top: 20%;
 }
 .typecontainer {
     color: #fff;
-    height: 500px;
+    height: 600px;
     padding-top: 17%;
     padding-left: 35%;
 }
 .type {
+    color:rgba(255, 255, 255, 0.931);
     font-size:40px;
 }
 body>main>div> h1 {
@@ -62,7 +62,6 @@ body>main>div> h1 {
     width: 80%;
     position: relative;
     left: 11%;
-    opacity: 0.9;
 }
 /*Contact Page CSS*/
 #contact {
@@ -76,7 +75,6 @@ body>main>div> h1 {
     position: relative;
     left: 40%;
 }
-
 /*Global*/
 @-webkit-keyframes fadein {
 
