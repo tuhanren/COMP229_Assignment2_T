@@ -32,7 +32,7 @@
     <!-- Lottie Section -->
     <script>
       //aboutpage animation
-      const lottieabout = document.querySelector('.lottieabout');
+      const lottieabout = document.getElementById('lottieabout');
         lottie.loadAnimation({
         container: lottieabout,
         renderer: 'svg',
@@ -67,11 +67,9 @@
         autoplay: true,
         path: 'https://assets5.lottiefiles.com/packages/lf20_DMgKk1.json' 
       });
-    </script>
-    <!-- Typed Section -->
-    <script>
-      let typed = new Typed(".type", {
-        strings: [
+    // Typed Section
+      let options = {
+      strings: [
           "Hey, It's Hanren here!",
           "I am a Web Developer.",
           "I am a Data Analyst.",
@@ -80,7 +78,8 @@
         typeSpeed: 60,
         backSpeed: 60,
         loop: true
-      });
+      };
+      let responsive = new Typed('.type', options);
     </script>
   </body>
 </html>
