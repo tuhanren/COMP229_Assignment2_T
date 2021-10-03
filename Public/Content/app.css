@@ -4,50 +4,82 @@ Student Name: Tu Hanren
 Student ID: 301061529
 Date: 2021-09-28
 */
-/*Home page CSS*/
+/*Global CSS*/
 body {
     background-image: url("/Assets/images/background2.svg");
-    /*image source: https://pixabay.com/illustrations/planet-moon-orbit-solar-system-581239/*/
-    background-size: cover;
-    /* height: 800px; */
-    /* opacity: 0.9; */
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
     -webkit-animation: fadein 0.5s linear forwards;
     animation: fadein 0.5s linear forwards;
-    /* background-repeat: no-repeat; */
-}
-body>main>div>div> h1{
     position: relative;
-    left: 12%;
+    height: 800px;
+    min-height: 500px;
+    width: 100%;
 }
-.lottiehome {
-    height: 300px;
-    width: 300px;
-    float: right;
+body>main>div h1 {
+    color: #f8f5f6;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 12%;
+}
+/*Home page CSS*/
+header {
+    text-align: center;
+}
+.header {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+header .banner-text {
+    width: 100%;
     position: relative;
-    bottom: 200px;
+    right: 50%;
+    padding-top: 20%;
 }
-#jumbortron {
-    width: 830px;
-    position: relative;
-    left: 27%;
-    bottom: 120px;
-    font-size: 22px;
-    top: 40%;
-    background-color: rgba(0,0,0,0);
-}
-.typecontainer {
+header .banner-text h1 {
+    font: 90px/1.1em 'opensans-bold', sans-serif;
     color: #fff;
-    height: 500px;
-    padding-top: 17%;
-    padding-left: 35%;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
 }
-.type {
-    font-size:40px;
+header .banner-text h2 {
+    font: 24px/1.9em 'librebaskerville-regular', serif;
+    color: #dadada;
+    margin: 0 auto;
 }
-body>main>div> h1 {
-    color:#ffffff;
-    position: relative;
-    padding:10px;
+header .banner-text h3 span, header .banner-text h3 a {
+   color: #fff;
+}
+header .banner-text hr {
+   width: 50%;
+   margin: 18px auto 24px auto;
+   color: #f8f5f6;
+}
+header .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px;
+}
+ header .social li {
+    display: inline-block;
+    margin: 0 15px;
+}
+header .social li a { 
+     color: #fff; 
+}
+header .social li a:hover {
+     color: #2beef5; 
 }
 /*Projects Page CSS*/
 .serviceanimation {
