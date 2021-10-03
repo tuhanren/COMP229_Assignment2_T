@@ -22,6 +22,9 @@ body>main>div h1 {
     margin-bottom: 18px;
     margin-left: 12%;
 }
+html, body {
+    min-height: 100%;
+}
 /*Home page CSS*/
 header {
     text-align: center;
@@ -82,6 +85,11 @@ header .social li a:hover {
      color: #2beef5; 
 }
 /*About Page CSS*/
+.selfie {
+    width: 150px;
+    height: 200px;
+
+}
 
 /*Projects Page CSS*/
 .serviceanimation {
@@ -110,7 +118,10 @@ header .social li a:hover {
     position: relative;
     left: 40%;
 }
-
+.h1contact {
+    position: relative;
+    right: 12%;
+}
 /*Global*/
 @-webkit-keyframes fadein {
 
