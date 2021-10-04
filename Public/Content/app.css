@@ -7,12 +7,13 @@ Date: 2021-09-28
 /*Global CSS*/
 body {
     background-image: url("/Assets/images/background2.svg");
+    /*image source: https://pixabay.com/photos/road-highway-car-travel-automobile-6654573/*/
     background-size: cover !important;
     -webkit-background-size: cover !important;
     -webkit-animation: fadein 0.5s linear forwards;
     animation: fadein 0.5s linear forwards;
     position: relative;
-    height: 800px;
+    height: 100%;
     min-height: 500px;
     width: 100%;
 }
@@ -24,6 +25,10 @@ body>main>div h1 {
 }
 html, body {
     min-height: 100%;
+}
+#extraspan {
+    opacity: 0;
+    visibility: hidden;
 }
 /*Home page CSS*/
 header {
@@ -46,7 +51,7 @@ header .banner {
 header .banner-text {
     width: 100%;
     position: relative;
-    right: 55%;
+    right: 58%;
     padding-top: 20%;
 }
 header .banner-text h1 {
@@ -64,7 +69,7 @@ header .banner-text h3 span, header .banner-text h3 a {
    color: #fff;
 }
 header .banner-text hr {
-   width: 50%;
+   width: 60%;
    margin: 18px auto 24px auto;
    color: #f8f5f6;
 }
@@ -110,9 +115,11 @@ header .social li a:hover {
 }
 .h-100 {
     width: 92%;
+    position: relative;
+    left: 3%;
 }
 .about-section h1 {
-    margin-left: 0;
+    margin-left: 40px;
 }
 /*Projects Page CSS*/
 .serviceanimation {
@@ -120,7 +127,7 @@ header .social li a:hover {
     width: 200px;
 }
 .img-thumbnail {
-    height: 200px;
+    height: 150px;
     width: 200px;
 }
 #table {
@@ -129,6 +136,7 @@ header .social li a:hover {
     left: 11%;
     opacity: 0.9;
 }
+
 /*Contact Page CSS*/
 #contact {
     color: #fff;

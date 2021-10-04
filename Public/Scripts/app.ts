@@ -9,6 +9,5 @@ Date: 2021-09-28
   function Start() {
     console.log("Start...");
   }
-
   window.addEventListener("load", Start);
 })();
