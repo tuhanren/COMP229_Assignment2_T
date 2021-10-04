@@ -34,9 +34,7 @@
     //     autoplay: true,
     //     path: 'https://assets5.lottiefiles.com/packages/lf20_DMgKk1.json' 
     //   });
-    //   </script>
-    //   <!--Typed Section-->
-    //   <script>
+    //   //typed.js
     //   let options = {
     //     strings: [
     //       "Hey, It's Hanren here!",
