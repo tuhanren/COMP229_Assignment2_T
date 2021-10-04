@@ -1,3 +1,10 @@
+/* 
+File name: portfolio
+Course name: COMP229 Web application development
+Student Name: Tu Hanren
+Student ID: 301061529
+Date: 2021-09-28
+*/
 "use strict";
 (function () {
     function Start() {

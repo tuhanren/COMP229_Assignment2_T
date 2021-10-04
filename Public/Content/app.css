@@ -1,5 +1,6 @@
 /* 
 File name: portfolio
+Course name: COMP229 Web application development
 Student Name: Tu Hanren
 Student ID: 301061529
 Date: 2021-09-28
@@ -7,6 +8,7 @@ Date: 2021-09-28
 /*Global CSS*/
 body {
     background-image: url("/Assets/images/background2.svg");
+    background-position: center center;
     /*image source: https://pixabay.com/photos/road-highway-car-travel-automobile-6654573/*/
     background-size: cover !important;
     -webkit-background-size: cover !important;
