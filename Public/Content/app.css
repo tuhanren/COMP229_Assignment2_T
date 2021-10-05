@@ -1,5 +1,5 @@
 /* 
-File name: portfolio
+File name: assignment2
 Course name: COMP229 Web application development
 Student Name: Tu Hanren
 Student ID: 301061529
