@@ -15,7 +15,7 @@ router.get("/home", function (req, res, next) {
 /* GET about us page. */
 router.get('/about', function(req, res, next) {
   res.render("index", { title: "About", page:"about" });
-  // let resumePath = 'Public/Assets/docs/resume.pdf';
+  // let resumePath = 'Client/Assets/docs/resume.pdf';
   // fs.readFile(resumePath, function (err, data) {
   //   res.contentType('application/pdf');
   //   res.send(data);
