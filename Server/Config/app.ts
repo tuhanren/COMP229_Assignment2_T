@@ -4,11 +4,28 @@ import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 
+import mongoose, {mongo } from 'mongoose';
+
 import indexRouter from "../Routes/index";
 
 // Express Web App Configuration
 const app = express();
 export default app; // exports app as the default Object for this module
+
+// DB config
+import * as DBConfig from './db';
+//connect mongoose
+mongoose.connect(DBConfig.LocalURI, {useNewUrlParser: true, useUnifiedTopology: true});
+const db = mongoose.connection; // alias for the mongoose connection
+db.on("error", function()
+{
+	console.error("Connection Error")
+});
+
+db.once("open", function()
+{
+	console.log(`Connected to MongoDB at: ${DBConfig.HostName}`);
+});
 
 // view engine setup
 app.set("views", path.join(__dirname, "../Views"));

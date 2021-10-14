@@ -91,6 +91,7 @@ header .social li a {
 header .social li a:hover {
      color: #2beef5; 
 }
+
 /*About Page CSS*/
 .selfie {
     width: 200px;
@@ -138,7 +139,10 @@ header .social li a:hover {
     left: 11%;
     opacity: 0.9;
 }
-
+#homediv {
+    position: relative;
+    left: 36%;
+}
 /*Contact Page CSS*/
 #contact {
     color: #fff;
