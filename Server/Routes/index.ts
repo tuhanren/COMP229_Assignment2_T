@@ -3,57 +3,28 @@ import express from "express";
 const router = express.Router();
 export default router;
 
-//get a reference to teh Game Model Class
-import Game from '../Models/game';
+// instantiate an object of type index controller
+import { DisplayAboutPage, DisplayContactPage, DisplayGameListPage, DisplayHomePage, DisplayProjectsPage, DisplayServicesPage } from '../Controller/index';
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("index", { title: "Home", page:"home" });
-});
+router.get("/", DisplayHomePage);
+
 /* GET home page. */
-router.get("/home", function (req, res, next) {
-  res.render("index", { title: "Home", page:"home" });
-});
+router.get("/home", DisplayHomePage);
 
 /* GET about us page. */
-router.get('/about', function(req, res, next) {
-  res.render("index", { title: "About", page:"about" });
-  // let resumePath = 'Client/Assets/docs/resume.pdf';
-  // fs.readFile(resumePath, function (err, data) {
-  //   res.contentType('application/pdf');
-  //   res.send(data);
-  // });
-});
+router.get('/about', DisplayAboutPage);
 
 /* GET projects page. */
-router.get("/projects", function (req, res, next) {
-  res.render("index", { title: "Projects", page:"projects" });
-});
+router.get("/projects", DisplayProjectsPage);
 
 /* GET services page. */
-router.get("/services", function (req, res, next) {
-  res.render("index", { title: "Services", page:"services" });
-});
+router.get("/services", DisplayServicesPage);
 
 /* GET contact us page. */
-router.get("/contact", function (req, res, next) {
-  res.render("index", { title: "Contact", page:"contact" });
-});
+router.get("/contact", DisplayContactPage);
 
 //get game-list request
-router.get('/games-list', function(req, res, next)
-{
-//db.games.find()
-	//Game.find((err, gamesCollection) =>???// check video
-	Game.find(function(err, gamesCollection)
-	{
-		if(err)
-		{
-			console.error(err);
-			res.end(err);
-		}
-		//print the game-list at the back end
-		console.log(gamesCollection);
-	});
-});
+router.get('/games-list', DisplayGameListPage);
+
 //module.exports = router;
