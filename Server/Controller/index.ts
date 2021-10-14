@@ -37,6 +37,6 @@ export function DisplayGameListPage(req: Request, res: Response, next: NextFunct
 			res.end(err);
 		}
 		
-		res.render('index', { title: 'Game List', Page: 'games-list', games: gamesCollection });
+		res.render('index', { title: 'Games List', page: 'games-list', games: gamesCollection });
 	});
 }
