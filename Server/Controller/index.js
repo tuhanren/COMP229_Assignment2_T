@@ -1,10 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplayGameListPage = exports.DisplayContactPage = exports.DisplayServicesPage = exports.DisplayProjectsPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
-const game_1 = __importDefault(require("../Models/game"));
+exports.DisplayContactPage = exports.DisplayServicesPage = exports.DisplayProjectsPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
 function DisplayHomePage(req, res, next) {
     res.render("index", { title: "Home", page: "home" });
 }
@@ -25,14 +21,4 @@ function DisplayContactPage(req, res, next) {
     res.render("index", { title: "Contact", page: "contact" });
 }
 exports.DisplayContactPage = DisplayContactPage;
-function DisplayGameListPage(req, res, next) {
-    game_1.default.find(function (err, gamesCollection) {
-        if (err) {
-            console.error(err);
-            res.end(err);
-        }
-        res.render('index', { title: 'Games List', page: 'games-list', games: gamesCollection });
-    });
-}
-exports.DisplayGameListPage = DisplayGameListPage;
 //# sourceMappingURL=index.js.map

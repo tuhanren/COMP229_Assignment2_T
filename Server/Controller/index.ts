@@ -1,6 +1,6 @@
 import express, {Request, Response, NextFunction} from 'express';
 //get a reference to teh Game Model Class
-import Game from '../Models/game';
+import Contact from '../Models/contact';
 
 export function DisplayHomePage(req: Request, res: Response, next: NextFunction): void
 {
@@ -27,16 +27,3 @@ export function DisplayContactPage(req: Request, res: Response, next: NextFuncti
 	res.render("index", { title: "Contact", page:"contact" });
 }
 
-export function DisplayGameListPage(req: Request, res: Response, next: NextFunction): void
-{
-      Game.find(function(err, gamesCollection)
-	{
-		if(err)
-		{
-			console.error(err);
-			res.end(err);
-		}
-		
-		res.render('index', { title: 'Games List', page: 'games-list', games: gamesCollection });
-	});
-}

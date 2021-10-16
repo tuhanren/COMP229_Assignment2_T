@@ -4,7 +4,7 @@ const router = express.Router();
 export default router;
 
 // instantiate an object of type index controller
-import { DisplayAboutPage, DisplayContactPage, DisplayGameListPage, DisplayHomePage, DisplayProjectsPage, DisplayServicesPage } from '../Controller/index';
+import { DisplayAboutPage, DisplayContactPage, DisplayHomePage, DisplayProjectsPage, DisplayServicesPage } from '../Controller/index';
 
 /* GET home page. */
 router.get("/", DisplayHomePage);
@@ -24,7 +24,7 @@ router.get("/services", DisplayServicesPage);
 /* GET contact us page. */
 router.get("/contact", DisplayContactPage);
 
-//get game-list request
-router.get('/games-list', DisplayGameListPage);
+//get contacts-list request
+//router.get('/contacts-list', DisplayContactListPage);
 
 //module.exports = router;
