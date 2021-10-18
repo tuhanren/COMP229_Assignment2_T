@@ -33,7 +33,7 @@ const contacts_1 = __importDefault(require("../Routes/contacts"));
 const app = (0, express_1.default)();
 exports.default = app;
 const DBConfig = __importStar(require("./db"));
-mongoose_1.default.connect(DBConfig.RemoteURI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose_1.default.connect((DBConfig.RemoteURI) ? DBConfig.RemoteURI : DBConfig.LocalURI, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose_1.default.connection;
 db.on("error", function () {
     console.error("Connection Error");
