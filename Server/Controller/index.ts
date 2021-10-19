@@ -5,7 +5,7 @@ import passport from 'passport';
 // create an instance of the User Model
 import User from '../Models/user';
 
-//get a reference to teh Game Model Class
+//get a reference to teh contact Model Class
 import Contact from '../Models/contact';
 
 export function DisplayHomePage(req: Request, res: Response, next: NextFunction): void

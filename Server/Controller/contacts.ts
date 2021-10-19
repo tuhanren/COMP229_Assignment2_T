@@ -28,14 +28,14 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
                   console.error(err);
                   res.end(err);
             }
-            //show the edit view
-            res.render('index', { title: 'Edit', page: 'update', item: contactsItemToEdit});
+            //show the update view
+            res.render('index', { title: 'Update', page: 'update', item: contactsItemToEdit});
       });
 }
 // Display (C)reate page
 export function DisplayAddPage(req: Request, res: Response, next: NextFunction): void
 {
-      //show the edit view
+      //show the update view
       res.render('index', {title: 'Add', page: 'update', item: ''});
 }
 

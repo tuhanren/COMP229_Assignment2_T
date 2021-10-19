@@ -25,7 +25,7 @@
                                     <td><%= contactlist[count].EmailAddress %></td>
                                     <td><%= contactlist[count].ContactNumber %></td>
                                     <!-- Buttons -->
-                                    <td class="text-center"><a href="/contacts-list/edit/<%= contactlist[count]._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                                    <td class="text-center"><a href="/contacts-list/update/<%= contactlist[count]._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                                     <td class="text-center"><a href="/contacts-list/delete/<%= contactlist[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
                               </tr>
                         <% } %>
