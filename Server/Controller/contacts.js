@@ -13,7 +13,7 @@ function DisplayContactListPage(req, res, next) {
             res.end(err);
         }
         res.render('index', { title: 'Contacts List', page: 'contacts-list', contactlist: contactsCollection, displayName: (0, Util_1.UserDisplayName)(req) });
-    });
+    }).sort({ FullName: 'asc' });
 }
 exports.DisplayContactListPage = DisplayContactListPage;
 function DisplayEditPage(req, res, next) {

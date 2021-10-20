@@ -18,7 +18,7 @@ export function DisplayContactListPage(req: Request, res: Response, next: NextFu
 		}
 		
 		res.render('index', { title: 'Contacts List', page: 'contacts-list', contactlist: contactsCollection, displayName: UserDisplayName(req) });
-	});
+	}).sort({FullName: 'asc'});
 }
 // Display (E)dit page
 export function DisplayEditPage(req: Request, res: Response, next: NextFunction): void 
