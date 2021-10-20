@@ -5,38 +5,46 @@ import passport from 'passport';
 // create an instance of the User Model
 import User from '../Models/user';
 
-//get a reference to teh contact Model Class
+//import Util functions
+import { UserDisplayName } from '../Util';
+
+//get a reference to the contact Model Class
 import Contact from '../Models/contact';
 
 export function DisplayHomePage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "Home", page:"home" });
+	res.render("index", { title: "Home", page:"home", displayName: UserDisplayName(req) });
 }
 
 export function DisplayAboutPage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "About", page:"about" });
+	res.render("index", { title: "About", page:"about", displayName: UserDisplayName(req) });
 }
 
 export function DisplayProjectsPage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "Projects", page:"projects" });
+	res.render("index", { title: "Projects", page:"projects", displayName: UserDisplayName(req) });
 }
 
 export function DisplayServicesPage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "Services", page:"services" });
+	res.render("index", { title: "Services", page:"services", displayName: UserDisplayName(req) });
 }
 
 export function DisplayContactPage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "Contact", page:"contact" });
+	res.render("index", { title: "Contact", page:"contact", displayName: UserDisplayName(req) });
 }
 
 // functions for authentication
 export function DisplayLoginPage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "Login", page:"login" });
+	if(!req.user)
+	{
+		return res.render("index", { title: "Login", page:"login", messages: req.flash('loginMessage'), displayName: UserDisplayName(req) });
+	}
+
+	return res.redirect('/contacts-list');
 }
 
 export function ProcessLoginPage(req: Request, res: Response, next: NextFunction): void
@@ -72,12 +80,17 @@ export function ProcessLoginPage(req: Request, res: Response, next: NextFunction
 	    
 	    return res.redirect('/contacts-list');
 	  });
-	})(req, res, next);
+	})(req, res, next);//activate callback function by adding (req, res, next)
 }
 
 export function DisplayRegisterPage(req: Request, res: Response, next: NextFunction): void
 {
-	res.render("index", { title: "Register", page:"register" });
+	if(!req.user)
+	{
+		return res.render("index", { title: "Register", page:"register", messages: req.flash('registerMessage'), displayName: UserDisplayName(req) });
+	}
+
+	return res.redirect('/contacts-list');
 }
 
 export function ProcessRegisterPage(req: Request, res: Response, next: NextFunction): void

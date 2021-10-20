@@ -2,6 +2,9 @@ import express, {Request, Response, NextFunction} from 'express';
 
 import Contact from '../Models/contact';
 
+//import Util functions
+import { UserDisplayName } from '../Util';
+
 // Display Functions
 //(R)ead in CRUD
 export function DisplayContactListPage(req: Request, res: Response, next: NextFunction): void
@@ -14,7 +17,7 @@ export function DisplayContactListPage(req: Request, res: Response, next: NextFu
 			res.end(err);
 		}
 		
-		res.render('index', { title: 'Contacts List', page: 'contacts-list', contactlist: contactsCollection });
+		res.render('index', { title: 'Contacts List', page: 'contacts-list', contactlist: contactsCollection, displayName: UserDisplayName(req) });
 	});
 }
 // Display (E)dit page
@@ -29,14 +32,14 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
                   res.end(err);
             }
             //show the update view
-            res.render('index', { title: 'Update', page: 'update', item: contactsItemToEdit});
+            res.render('index', { title: 'Update', page: 'update', item: contactsItemToEdit, displayName: UserDisplayName(req)});
       });
 }
 // Display (C)reate page
 export function DisplayAddPage(req: Request, res: Response, next: NextFunction): void
 {
       //show the update view
-      res.render('index', {title: 'Add', page: 'update', item: ''});
+      res.render('index', {title: 'Add', page: 'update', item: '', displayName: UserDisplayName(req)});
 }
 
 // Process Functions
