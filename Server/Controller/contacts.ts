@@ -9,7 +9,7 @@ import { UserDisplayName } from '../Util';
 //(R)ead in CRUD
 export function DisplayContactListPage(req: Request, res: Response, next: NextFunction): void
 {
-      Contact.find(function(err, contactsCollection)
+      Contact.find((err, contactsCollection) =>
 	{
 		if(err)
 		{

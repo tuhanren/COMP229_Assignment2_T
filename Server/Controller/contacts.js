@@ -7,7 +7,7 @@ exports.ProcessDeletePage = exports.ProcessAddPage = exports.ProcessEditPage = e
 const contact_1 = __importDefault(require("../Models/contact"));
 const Util_1 = require("../Util");
 function DisplayContactListPage(req, res, next) {
-    contact_1.default.find(function (err, contactsCollection) {
+    contact_1.default.find((err, contactsCollection) => {
         if (err) {
             console.error(err);
             res.end(err);
