@@ -165,11 +165,6 @@ header .social li a:hover {
     position: relative;
     right: 70%;
 }
-#updatepage {
-    width: 500px;
-    position: relative;
-    left: 30%;
-}
 /*Login*/
 .input-group-addon:first-child
 {

@@ -13,7 +13,7 @@ router.get("/", DisplayHomePage);
 router.get("/home", DisplayHomePage);
 
 /* GET about us page. */
-router.get('/about', DisplayAboutPage);
+router.get("/about", DisplayAboutPage);
 
 /* GET projects page. */
 router.get("/projects", DisplayProjectsPage);
@@ -25,19 +25,19 @@ router.get("/services", DisplayServicesPage);
 router.get("/contact", DisplayContactPage);
 
 /* GET display login page */
-router.get('/login', DisplayLoginPage);
+router.get("/login", DisplayLoginPage);
 
 /* POST process login page*/
-router.post('/login', ProcessLoginPage);
+router.post("/login", ProcessLoginPage);
 
 /* GET display register page*/
-router.get('/register', DisplayRegisterPage);
+router.get("/register", DisplayRegisterPage);
 
 /* POST process register page*/
-router.post('/register', ProcessRegisterPage);
+router.post("/register", ProcessRegisterPage);
 
 /* GET logout page */
-router.get('/logout', ProcessLogoutPage);
+router.get("/logout", ProcessLogoutPage);
 
 //get contacts-list request
 //router.get('/contacts-list', DisplayContactListPage);
