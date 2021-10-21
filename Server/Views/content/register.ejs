@@ -1,7 +1,7 @@
 <div class="rrow text-white">
       <div class="offset-md-3 col-md-6 col-sm-12">
             <div class="register bg-dark my-3 p-5" id="contentArea">
-                  <h1><strong><%= title %></strong></h1>
+                  <h1 id="h1register"><strong><%= title %></strong></h1>
                   <hr style="height:2px; width:100%; border-width:0; color:white;">
 
                   <% if(messages.length > 0) { %>
@@ -64,7 +64,7 @@
                               <div class="text-right">
                                     <button id="submitButton" type="submit" class="btn btn-primary"><i
                                                 class="fas fa-user-plus"></i> Register</button>
-                                    <a href="/" id="cancelButton" class="btn btn-warning"><i
+                                    <a href="/" id="cancelButton" class="btn btn-warning ms-1"><i
                                                 class="fas fa-undo-alt"></i> Cancel</a>
                               </div>
                   </form>
@@ -75,3 +75,4 @@
             <a href="/login">Sign in</a>
       </p>
 </div>
+<span class="type" id="extraspan"></span>

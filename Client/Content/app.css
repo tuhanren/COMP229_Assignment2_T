@@ -211,6 +211,38 @@ header .social li a:hover {
     border-radius: .4em;
     width: 100%;
 }
+/*update page*/
+.input-group-text
+{
+    width: 160px;
+}
+.urow
+{
+    width: 60%;
+    margin-left: 20%;
+}
+.uform
+{
+    margin-left: 8%;
+}
+#h1update
+{
+    margin-left: 0;
+}
+/*contacts-list*/
+#h1contactlist{
+    margin-left: 24%;
+}
+/*login*/
+#h1login
+{
+    margin-left: 0;
+}
+/*register*/
+#h1register
+{
+    margin-left: 0;
+}
 /*Global*/
 @-webkit-keyframes fadein {
 
