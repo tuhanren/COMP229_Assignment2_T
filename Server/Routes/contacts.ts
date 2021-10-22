@@ -8,7 +8,7 @@ export default router;
 import { AuthGuard } from '../Util/index';
 
 //get contacts-list page - with "/contacts-list"
-router.get("/", DisplayContactListPage);
+router.get("/", AuthGuard, DisplayContactListPage);
 //get display update/:id page - with "/contacts-list/update:id"
 router.get("/update/:id", AuthGuard, DisplayEditPage);
 //get display /contacts-list/add page
