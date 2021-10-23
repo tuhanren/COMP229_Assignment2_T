@@ -1,3 +1,10 @@
+/* 
+File name: assignment2
+Course name: COMP229 Web application development
+Student Name: Tu Hanren
+Student ID: 301061529
+Date: 2021-10-11
+*/
 "use strict";
 (function () {
     function confirmDelete() {
