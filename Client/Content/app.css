@@ -161,9 +161,12 @@ header .social li a:hover {
 }
 /*contacts-list page*/
 #contacttable {
-    width: 600px;
+    width: 650px;
     position: relative;
-    right: 70%;
+    right: 65%;
+}
+#h1contactlist{
+    margin-left: 24%;
 }
 /*Login*/
 .input-group-addon:first-child
@@ -211,6 +214,10 @@ header .social li a:hover {
     border-radius: .4em;
     width: 100%;
 }
+#h1login
+{
+    margin-left: 0;
+}
 /*update page*/
 .input-group-text
 {
@@ -226,15 +233,6 @@ header .social li a:hover {
     margin-left: 8%;
 }
 #h1update
-{
-    margin-left: 0;
-}
-/*contacts-list*/
-#h1contactlist{
-    margin-left: 24%;
-}
-/*login*/
-#h1login
 {
     margin-left: 0;
 }
